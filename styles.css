@@ -43,6 +43,7 @@ a {
 .header.fixed {
   position: sticky;
   top: -28px;
+  z-index: 1;
 }
 .header {
   /* background-color: aquamarine; */
