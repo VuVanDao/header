@@ -13,9 +13,17 @@ body {
   font-family: "Poppins", sans-serif;
   /* flex-wrap: wrap; */
 }
-/* comon */
+/* ================comon================= */
 a {
   text-decoration: none;
+}
+.heading-lv2 {
+  color: #171100;
+  font-family: var(--font-heading);
+  font-size: 3.8rem;
+  font-weight: 700;
+  line-height: 1.27; /* 126.316% */
+  letter-spacing: -0.76px;
 }
 .main-content {
   width: 1170px;
@@ -183,7 +191,7 @@ a {
 .hero .cta-group {
   margin-top: 35px;
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 .hero .cta-group .btn-cta {
   background-color: var(--primary-color);
@@ -216,12 +224,12 @@ a {
   /* margin-bottom: 50px; */
 }
 .hero .desc-recent {
-  margin-bottom: 50px;
+  margin-bottom: 10px;
   /* background-color: #ffb900; */
 }
-.hero .stat {
-  margin-top: 10px;
-}
+/* .hero .stat {
+   margin-bottom: 60px; 
+} */
 .stat strong {
   color: #171100;
   font-family: var(--font-heading);
@@ -232,4 +240,42 @@ a {
 }
 .stat strong:nth-child(2) {
   margin-left: 28px;
+}
+/* popular */
+.popular {
+  padding: 65px 0;
+  /* background-color: aqua; */
+  margin-top: 135px;
+}
+.popular .desc {
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+}
+.popular-top {
+  display: flex;
+  justify-content: space-between;
+}
+.popular-top .control {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+}
+.popular-top .control-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+}
+.popular-top .control-btn:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  cursor: pointer;
 }
