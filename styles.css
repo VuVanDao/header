@@ -367,3 +367,60 @@ a {
 .btn-book:hover {
   background-color: var(--primary-color);
 }
+/* ================================== feed-back ============================================ */
+.feed-back {
+  margin-top: 135px;
+  background-color: #2e2100;
+  padding: 95px 0;
+}
+.feed-back-list .feed-back-item {
+  display: flex;
+}
+.feed-back-list .feed-back-item .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feed-back-list .feed-back-item .member-name {
+  color: #f7f7f7;
+  margin-top: 18px;
+  font-family: var(--font-heading);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 1.41; /* 141.667% */
+}
+.feed-back-list .feed-back-item .info .desc {
+  color: #bfbcb2;
+  /* font-family: var(--font-heading); */
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 1.85; /* 185.714% */
+  margin-top: 4px;
+}
+.feed-back-item .dots {
+  display: flex;
+  gap: 6px;
+  margin-top: 25px;
+}
+.dots .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 6px;
+  background: #634700;
+  cursor: pointer;
+}
+.feed-back-item .content {
+  width: 66%;
+  margin-left: auto;
+}
+.content blockquote {
+  color: #fff;
+  font-size: 2.6rem;
+  font-style: italic;
+  line-height: 1.53; /* 153.846% */
+}
+.dots .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
