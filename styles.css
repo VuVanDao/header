@@ -48,7 +48,19 @@ a {
   cursor: pointer;
   opacity: 0.9;
 }
-
+/* toi uu hoa trang web */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.break-all {
+  word-break: break-all;
+}
 /* =========================================================header=================================================== */
 .header.fixed {
   position: sticky;
@@ -284,6 +296,7 @@ a {
 /* ================================popular-bottom================================================= */
 
 .popular .course-list {
+  flex: 1;
   margin-top: 55px;
   display: flex;
   gap: 30px;
