@@ -375,11 +375,13 @@ a {
 }
 .feed-back-list {
   display: flex;
+  overflow: hidden;
 }
+
 .feed-back-list .feed-back-item {
+  width: 100%;
   display: flex;
   flex-shrink: 0;
-  overflow: hidden;
 }
 .feed-back-list .feed-back-item .avatar {
   width: 72px;
@@ -428,4 +430,54 @@ a {
 .dots .dot.active {
   background: var(--primary-color);
   cursor: default;
+}
+/* ============================================== features ================================================*/
+.features {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+.features .main-content .body {
+  display: flex;
+  justify-content: space-between;
+}
+.features .images {
+  display: flex;
+  gap: 20px;
+}
+.images img {
+  width: 270px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.images .imglower {
+  margin-top: 30px;
+}
+.features .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 40%;
+}
+.features .content .heading-lv2 {
+  color: #171100;
+  font-size: 3.8rem;
+  line-height: 1.26; /* 126.316% */
+}
+.features .content .desc {
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.6rem;
+  line-height: 1.75; /* 175% */
+}
+.features .content .btn {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 137px;
+  height: 50px;
+  border-radius: 26px;
+  background: var(--primary-color);
 }
