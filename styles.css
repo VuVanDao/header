@@ -373,8 +373,13 @@ a {
   background-color: #2e2100;
   padding: 95px 0;
 }
+.feed-back-list {
+  display: flex;
+}
 .feed-back-list .feed-back-item {
   display: flex;
+  flex-shrink: 0;
+  overflow: hidden;
 }
 .feed-back-list .feed-back-item .avatar {
   width: 72px;
