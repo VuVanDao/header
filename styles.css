@@ -520,11 +520,13 @@ a {
   gap: 20px;
   display: flex;
   margin-top: 55px;
+  overflow: hidden;
 }
 .blogs-list .item {
-  width: 33, 33%;
+  width: calc(33.33% - 20px);
   border-radius: 16px;
   background: #fff;
+  flex-shrink: 0;
 }
 .blogs-list .item:hover {
   border-radius: 16px;
@@ -576,8 +578,91 @@ a {
 }
 .item .info .btn {
   margin-top: 12px;
+  font-size: 1.4rem;
 }
 .item .info .btn:hover {
   background: var(--primary-color);
   box-shadow: 0px 16px 32px 0px rgba(0, 0, 0, 0.05);
+}
+.blog .dots {
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  margin-top: 38px;
+}
+.blog .dots .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.blog .dots .dot:hover {
+  background: var(--primary-color);
+}
+.blog .dots .dot.active {
+  background: var(--primary-color);
+  cursor: default;
+}
+/* ========================================== FOOTER ==============================================*/
+footer {
+  background-color: #2e2100;
+  padding: 96px 135px 0;
+}
+.footer .row {
+  display: flex;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #59554b;
+}
+.footer .row .column {
+  width: 21.6%;
+}
+.footer .row .column:first-child {
+  width: 35%;
+}
+.footer .column .desc {
+  margin-top: 18px;
+  color: #bfbcb2;
+  max-width: 267px;
+  font-size: 1.4rem;
+  line-height: 1.85; /* 185.714% */
+}
+.footer .socials {
+  display: flex;
+  gap: 18px;
+  margin-top: 18px;
+}
+.footer .title {
+  padding-bottom: 14px;
+  padding-right: 48px;
+  display: inline-block;
+  border-bottom: 1px solid #59554b;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.75; /* 175% */
+}
+.footer .list {
+  margin-top: 28px;
+}
+.footer .list a {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.85; /* 185.714% */
+}
+.footer .list li:last-child a {
+  margin-bottom: 0;
+}
+.footer .list strong {
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: 1.86; /* 185.714% */
+}
+.footer .copyright {
+  padding: 28px 0;
+  color: #807d74;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.85; /* 185.714% */
 }
